@@ -22,12 +22,20 @@ if(filteredTags.length > 0)
     iframeElement.style.minWidth = '100%';
     iframeElement.style.minHeight = '100vh';
 
-await delay(5000);
-    var element = document.querySelector('#store');
-console.log(element);
+    setTimeout(() => {
+         var element = document.querySelector('.col-md-12');
+
     if (element) {
-        element.appendChild(iframeElement);
+        nestedElement.appendChild(iframeElement);
     } 
+    }, 5000);
+
+// await delay(5000);
+//     var element = document.querySelector('#store');
+// console.log(element);
+//     if (element) {
+//         element.appendChild(iframeElement);
+//     } 
     //public/zid/script.js
 }
 });
