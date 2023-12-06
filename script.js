@@ -1,4 +1,4 @@
-window.document.addEventListener('DOMContentLoaded', function() {
+window.document.addEventListener('load', function() {
     
 var metaTags = document.getElementsByTagName('meta');
     console.log(metaTags);
