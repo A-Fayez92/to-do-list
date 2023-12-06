@@ -23,7 +23,7 @@ if(filteredTags.length > 0)
     iframeElement.style.minHeight = '100vh';
 
     setTimeout(() => {
-         var element = document.querySelector('.col-md-12');
+         var element = document.querySelector('.row');
 
     if (element) {
         element.appendChild(iframeElement);
