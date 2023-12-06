@@ -1,4 +1,4 @@
-window.document.addEventListener('load', function() {
+window.document.addEventListener('DOMContentLoaded', function() {
     
 var metaTags = document.getElementsByTagName('meta');
     console.log(metaTags);
@@ -23,7 +23,7 @@ if(filteredTags.length > 0)
     iframeElement.style.minHeight = '100vh';
 
 
-    var element = document.querySelector('.row');
+    var element = document.querySelector('#store');
 console.log(element);
     if (element) {
         element.appendChild(iframeElement);
