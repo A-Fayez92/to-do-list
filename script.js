@@ -26,7 +26,7 @@ if(filteredTags.length > 0)
          var element = document.querySelector('.col-md-12');
 
     if (element) {
-        nestedElement.appendChild(iframeElement);
+        element.appendChild(iframeElement);
     } 
     }, 5000);
 
