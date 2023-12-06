@@ -1,6 +1,4 @@
-(function(window , document) {
 
-window.document.addEventListener('DOMContentLoaded', function() {
     
 var metaTags = document.getElementsByTagName('meta');
     console.log('metaTags');
@@ -19,7 +17,7 @@ if(filteredTags.length > 0)
     var subDomain = window.store_uuid;
     console.log('subDomain');
     var iframeElement = document.createElement('iframe');
-    console.log('
+    console.log('iframeElement');
     iframeElement.src = 'https://' + subDomain + '.r.test'; 
     iframeElement.style.minWidth = '100%';
     iframeElement.style.minHeight = '100vh';
@@ -33,6 +31,4 @@ console.log('element');
     //public/zid/script.js
 }
 
-});
-})(window, document);
 
