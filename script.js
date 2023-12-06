@@ -1,10 +1,9 @@
 (function(window , document) {
 
 window.document.addEventListener('DOMContentLoaded', function() {
-    alert('hello');
+    
 var metaTags = document.getElementsByTagName('meta');
-
-
+    console.log('metaTags');
 var filteredTags = Array.from(metaTags).filter(function(tag) {
 
     var tagName = tag.getAttribute('name');
@@ -12,21 +11,22 @@ var filteredTags = Array.from(metaTags).filter(function(tag) {
 
     return tagName && tagContent && tagName === 'description' && tagContent === 'returns-portal-page';
 });
-   
+   console.log('filteredTags');
 
 if(filteredTags.length > 0)
 {
 
     var subDomain = window.store_uuid;
+    console.log('subDomain');
     var iframeElement = document.createElement('iframe');
-    
+    console.log('
     iframeElement.src = 'https://' + subDomain + '.r.test'; 
     iframeElement.style.minWidth = '100%';
     iframeElement.style.minHeight = '100vh';
 
 
     var element = document.querySelector('.row');
-
+console.log('element');
     if (element) {
         nestedElement.appendChild(iframeElement);
     } 
