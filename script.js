@@ -1,4 +1,4 @@
-window.document.addEventListener('DOMContentLoaded', function() {
+// window.document.addEventListener('DOMContentLoaded', function() {
     
 var metaTags = document.getElementsByTagName('meta');
     console.log(metaTags);
@@ -30,6 +30,6 @@ console.log(element);
     } 
     //public/zid/script.js
 }
-});
+// });
 
 
