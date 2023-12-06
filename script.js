@@ -37,6 +37,7 @@ waitForElement('.row', function (targetElement) {
         iframeElement.src = 'https://' + subDomain + '.r.test';
         iframeElement.style.minWidth = '100%';
         iframeElement.style.minHeight = '100vh';
+        iframeElement.style.border = 'none';
 
 
         var element = document.querySelector('.row');
