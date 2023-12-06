@@ -22,7 +22,7 @@ if(filteredTags.length > 0)
     iframeElement.style.minWidth = '100%';
     iframeElement.style.minHeight = '100vh';
 
-
+await delay(5000);
     var element = document.querySelector('#store');
 console.log(element);
     if (element) {
