@@ -1,40 +1,38 @@
-alert('hello');
+(function(window , document) {
 
-// (function(window , document) {
-
-// window.document.addEventListener('DOMContentLoaded', function() {
-//     alert('hello');
-// var metaTags = document.getElementsByTagName('meta');
+window.document.addEventListener('DOMContentLoaded', function() {
+    alert('hello');
+var metaTags = document.getElementsByTagName('meta');
 
 
-// var filteredTags = Array.from(metaTags).filter(function(tag) {
+var filteredTags = Array.from(metaTags).filter(function(tag) {
 
-//     var tagName = tag.getAttribute('name');
-//     var tagContent = tag.getAttribute('content');
+    var tagName = tag.getAttribute('name');
+    var tagContent = tag.getAttribute('content');
 
-//     return tagName && tagContent && tagName === 'description' && tagContent === 'returns-portal-page';
-// });
+    return tagName && tagContent && tagName === 'description' && tagContent === 'returns-portal-page';
+});
    
 
-// if(filteredTags.length > 0)
-// {
+if(filteredTags.length > 0)
+{
 
-//     var subDomain = window.store_uuid;
-//     var iframeElement = document.createElement('iframe');
+    var subDomain = window.store_uuid;
+    var iframeElement = document.createElement('iframe');
     
-//     iframeElement.src = 'https://' + subDomain + '.r.test'; 
-//     iframeElement.style.minWidth = '100%';
-//     iframeElement.style.minHeight = '100vh';
+    iframeElement.src = 'https://' + subDomain + '.r.test'; 
+    iframeElement.style.minWidth = '100%';
+    iframeElement.style.minHeight = '100vh';
 
 
-//     var element = document.querySelector('.col-md-12');
+    var element = document.querySelector('.col-md-12');
 
-//     if (element) {
-//         nestedElement.appendChild(iframeElement);
-//     } 
-//     //public/zid/script.js
-// }
+    if (element) {
+        nestedElement.appendChild(iframeElement);
+    } 
+    //public/zid/script.js
+}
 
-// });
-// })(window, document);
+});
+})(window, document);
 
