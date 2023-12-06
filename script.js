@@ -23,10 +23,10 @@ if(filteredTags.length > 0)
     iframeElement.style.minHeight = '100vh';
 
 
-    var element = document.querySelector('.row');
+    element = document.querySelector('.row');
 console.log(element);
     if (element) {
-        nestedElement.appendChild(iframeElement);
+        element.appendChild(iframeElement);
     } 
     //public/zid/script.js
 }
