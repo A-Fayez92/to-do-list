@@ -1,6 +1,5 @@
-window.document.addEventListener('DOMContentLoaded', function() {
-    
-var metaTags = document.getElementsByTagName('meta');
+function allListenersExecuted() {
+    var metaTags = document.getElementsByTagName('meta');
     console.log(metaTags);
 var filteredTags = Array.from(metaTags).filter(function(tag) {
 
@@ -22,13 +21,13 @@ if(filteredTags.length > 0)
     iframeElement.style.minWidth = '100%';
     iframeElement.style.minHeight = '100vh';
 
-    setTimeout(() => {
+    // setTimeout(() => {
          var element = document.querySelector('.row');
 
     if (element) {
         element.appendChild(iframeElement);
     } 
-    }, 5000);
+    // }, 5000);
 
 // await delay(5000);
 //     var element = document.querySelector('#store');
@@ -38,6 +37,16 @@ if(filteredTags.length > 0)
 //     } 
     //public/zid/script.js
 }
+
+    console.log("All listeners have executed.");
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    allListenersExecuted();
 });
+
+
+    
+
 
 
